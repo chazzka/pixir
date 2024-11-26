@@ -5,11 +5,6 @@ defmodule Helper do
     Evision.imread(path)
     #|> Evision.Mat.to_nx
   end
-
-  def generate_sequence(n) when is_integer(n) and n > 0 do
-    0..n
-    |> Enum.map(fn k -> List.duplicate(0, n - k) ++ List.duplicate(1, k) end)
-  end
 end
 
 
