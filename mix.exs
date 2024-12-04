@@ -22,7 +22,9 @@ defmodule Pixir.MixProject do
   defp deps do
     [
       {:evision, "~> 0.2"},
-      {:axon, "~> 0.6"}
+      {:nx, "~> 0.2"},
+      {:axon, "~> 0.6"},
+      {:randixir, "~> 0.1.0"}
     ]
   end
 end

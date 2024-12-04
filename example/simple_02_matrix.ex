@@ -20,10 +20,10 @@ end
 
 defmodule MyModel do
   def model() do
-    Axon.input("x1", shape: {nil, 10,2})
-    |> Axon.conv(4, kernel_size: {2})
+    Axon.input("x1")
+    #|> Axon.conv(4, kernel_size: {2})
+    #|> Axon.dense(4) #neni potreba skryta, jednoduchy ukol
     |> Axon.flatten
-    #|> Axon.dense(4) neni potreba skryta, jednoduchy ukol
     |> Axon.dense(1)
   end
 
